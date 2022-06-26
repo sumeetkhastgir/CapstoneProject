@@ -1,5 +1,4 @@
 FROM node:10
-
 # Create app directory
 WORKDIR /home/ubuntu/nodejs
 
