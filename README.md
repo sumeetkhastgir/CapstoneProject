@@ -1,12 +1,19 @@
-# CapstoneProject
-DevOps Project
+## Usage:
+```
+# Install dependencies
+npm install
 
-Created AWS services through Terraform code
+# Start server
+node server.js
+```
+## API details
+- GET /
+    - returns "Hello World"
+- GET /load
+    - query params:
+        - scale -> time(ms) for which CPU will be blocked (default=random between 0ms to 10ms)
+    - returns "OK" after execution
 
-Created eksctl cluster and nodegroups
-
-Built a docker image of nodejs app and pushed the image to ECR
-
-Deployed a stateless application on Kubernetes
-
-Deployed a redis statefulset application on Kubernetes
+## Notes:
+- App runs on port 8081
+- Tested with node v14 and npm v7
